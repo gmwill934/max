@@ -8,7 +8,7 @@ import { ArtistContext } from '../context/ArtistContext';
 
 const initialState = {
   error: undefined,
-  isLoading: true,
+  isLoading: false,
   data: {
     artists: undefined, // search artists
     artist: undefined, // single page artist

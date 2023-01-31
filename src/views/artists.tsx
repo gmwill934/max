@@ -4,9 +4,9 @@ import { useArtistContext, useGenre } from '../hooks';
 
 export function ArtistsView() {
   const { selectedGenre, isLoading } = useGenre();
-  const { artists } = useArtistContext();
+  const { artists, isLoading: isLoadingArtists } = useArtistContext();
 
-  if (isLoading) {
+  if (isLoading || isLoadingArtists) {
     return <Loading />;
   }
 
