@@ -55,7 +55,7 @@ export function ArtistCard({
       </div>
       {showExtraInformation && (
         <div className='grid grid-cols-12 bg-gray-100 p-4 mt-4 shadow'>
-          <div className='lg:col-span-4 col-span-6 text-left'>
+          <div className='col-span-12 text-left'>
             <p className='text-base'>Additional Genres</p>
             <p className='text-gray-600'>
               {artistGenres.length ? (
