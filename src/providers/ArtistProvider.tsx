@@ -83,35 +83,6 @@ function reducer(state: ArtistState, action: ArtistActionType): ArtistState {
         },
       };
     }
-    // case 'UPDATE_ARTIST':
-    //   return {
-    //     ...state,
-    //     similar: state.data.similar?.map((artist) =>
-    //       artist.id === action.payload
-    // ? { ...artist, is_saved: !artist.is_saved }
-    // : artist
-    //     ),
-    //     data: state.data?.map((artist) =>
-    //       artist.id === action.payload
-    //         ? { ...artist, is_saved: !artist.is_saved }
-    //         : artist
-    //     ),
-    //     favorites: state.favorites?.filter(
-    //       (artist) => artist.id !== action.payload
-    //     ),
-    //     singles: state.favorites?.filter(
-    //       (artist) => artist.id !== action.payload
-    //     ),
-    //     single: state.single
-    //       ? {
-    //           ...state.single,
-    //           is_saved:
-    //             state.single.id === action.payload
-    //               ? !state.single.is_saved
-    //               : state.single.is_saved,
-    //         }
-    //       : state.single,
-    //   };
     default:
       return state;
   }
